@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS - Implementing Bootstrap Framework (SMD)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- Google Fonts: Arvo-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet"> 
+
+
+    <title>Wheel of Boredom</title>
+    <!-- CSS -->
+    <style>
+        .pageText{font-family: 'Arvo', serif;
+        background-color: rgb(255, 255, 255);
+        color: black;}
+
+        #logo{margin-right: 8px;}
+        #banner{margin-top: 15px;}
+
+    </style>
+  </head>
+  <body class="pageText">
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <!-- Image Reference: https://depositphotos.com/vector-images/color-wheel.html-->
+          <a class="navbar-brand" href="home.html"><img src="images/wheel.png" width="30" height="30" id="logo" class="d-inline-block align-top">Wheel of Boredom</a>
+          
+          <!-- Adds dropdown button if window size decreased -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navigation Bar Buttons-->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+              <!-- Navigation link: Home -->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+    
+              <!-- Dropdown Navigation link: Information -->
+              <li class="nav-item dropdown">
+                  <!-- Dropdown Menu -->
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Information
+                </a>
+                <!-- Menu Contents-->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="aboutus.html">About Us</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="stored_info.html">Privacy Policy</a></li>
+                </ul>
+
+                <!-- Navigation link: Contact Us -->
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="contactus.html">Contact Us</a>
+                </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- NAVIGATION BAR (END) -->
+
+      <h3 class="text-center" id="banner">Spin your way out of boredom!</h2>
+      <hr>
+  </body>
+</html>
