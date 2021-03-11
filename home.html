@@ -29,21 +29,22 @@
             font-size:11px;
         }
         #chart{
-            position:center;
-            width:500px;
-            height:500px;
-			left:0;
-			right:0;
+          position: sticky;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -40%);
+           width:500px;
+           height:50px;
         }
         #activity{
             position: absolute;
             width:300px;
             height:700px;
             top:0;
-            left:520px;
+            left:70%;
         }
         #activity h1{
-            font-size: 30px;
+            font-size: 20px;
             font-weight: bold;
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 			font-color: white;
@@ -107,7 +108,7 @@
 
       <h3 class="text-center" id="banner">Spin your way out of boredom!</h2>
       <hr>
-  	<div id="chart"></div>
+    <div id="chart"></div>
     <div id="activity"><h1></h1></div>
   </body>
 </html>
