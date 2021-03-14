@@ -267,8 +267,8 @@
           // If: the "value" variable at position "picked" in the array is equal to i
           if (data[picked].value == i) {
 
-            let activityHtml = data[i].page;
-            let currActivity = data[i].name;
+            let activityHtml = data[picked].page;
+            let currActivity = data[picked].name;
             document.getElementById("btn").innerHTML = currActivity;
             document.getElementById("btn").href = activityHtml;
             document.getElementById("btn").hidden = false;
