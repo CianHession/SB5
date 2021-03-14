@@ -1,289 +1,320 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS - Implementing Bootstrap Framework (SMD)-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <!-- Google Fonts: Arvo-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet"> 
-    <title>Wheel of Boredom</title>
-    <!-- CSS -->
-    <style>
-        .pageText{font-family: 'Arvo', serif;
-        background-color: rgb(255, 255, 255);
-        color: black;}
-        #logo{margin-right: 8px;}
-        #banner{margin-top: 15px;}
-      /*Wheel CSS (CH)*/
-	  /*Wheel Code ref: https://gist.github.com/jrue/a2aaf36b3c096925ccbf#file-index-html*/
-        text{
-            font-family:Helvetica, Arial, sans-serif;
-            font-size:11px;
-        }
-        #chart{
-          position: sticky;
-          left: 50%;
-          transform: translate(-50%, -50%);
-           width:500px;
-           height:50px;
-        }
-        #btn
-        {
-          font:  17px Arvo;
-          text-decoration: none;
-          background-color: #ffffff;
-          color: Black;
-          padding: 2px 6px 2px 6px;
-          border-top: 1px solid #000000;
-          border-right: 1px solid #000000;
-          border-bottom: 1px solid #000000;
-          border-left: 1px solid #000000;
-          float: left;
-          margin-top: 450px;
-          margin-left: 400px;
-          position: absolute;
-          right: 47%;
-          transform: translate(-40%, -50%);
-        }
-        #wrapper
-        {
-          text-align: center;
-        }
-        #page{
-            position: absolute;
-            width:300px;
-            height:700px;
-            top:0;
-            left:520px;
-            left:70%;
-        }
-        #page h1{
-            font-size: 20px;
-            font-weight: bold;
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-			position: absolute;
-            top:52%;
-            transform:translate(0,-40%);
-        }
-        
-    </style>
-  </head>
-  <body class="pageText">
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    <!-- NAVIGATION BAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <!-- Image Reference: https://depositphotos.com/vector-images/color-wheel.html-->
-          <a class="navbar-brand" href="home.html"><img src="images/wheel.png" width="30" height="30" id="logo" class="d-inline-block align-top">Wheel of Boredom</a>
-          
-          <!-- Adds dropdown button if window size decreased -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- Navigation Bar Buttons-->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              
-              <!-- Navigation link: Home -->
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
-              </li>
-    
-              <!-- Dropdown Navigation link: Information -->
-              <li class="nav-item dropdown">
-                  <!-- Dropdown Menu -->
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Information
-                </a>
-                <!-- Menu Contents-->
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="aboutus.html">About Us</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="stored_info.html">Privacy Policy</a></li>
-                </ul>
-                <!-- Navigation link: Contact Us -->
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="contactus.html">Contact Us</a>
-                </li>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!-- NAVIGATION BAR (END) -->
 
-      <h3 class="text-center" id="banner">Spin your way out of boredom!</h2>
-      <hr>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS - Implementing Bootstrap Framework (SMD)-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <!-- Google Fonts: Arvo-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+  <title>Wheel of Boredom</title>
+  <!-- CSS -->
+  <style>
+    .pageText {
+      font-family: 'Arvo', serif;
+      background-color: rgb(255, 255, 255);
+      color: black;
+    }
+
+    #logo {
+      margin-right: 8px;
+    }
+
+    #banner {
+      margin-top: 15px;
+    }
+
+    /*Wheel CSS (CH)*/
+    /*Wheel Code ref: https://gist.github.com/jrue/a2aaf36b3c096925ccbf#file-index-html*/
+    text {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 11px;
+    }
+
+    #chart {
+      position: sticky;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 500px;
+      height: 50px;
+    }
+
+    #btn {
+      font: 17px Arvo;
+      text-decoration: none;
+      background-color: #ffffff;
+      color: Black;
+      padding: 2px 6px 2px 6px;
+      border-top: 1px solid #000000;
+      border-right: 1px solid #000000;
+      border-bottom: 1px solid #000000;
+      border-left: 1px solid #000000;
+      float: left;
+      margin-top: 450px;
+      margin-left: 400px;
+      position: absolute;
+      right: 47%;
+      transform: translate(-40%, -50%);
+    }
+
+    #wrapper {
+      text-align: center;
+    }
+
+    #page {
+      position: absolute;
+      width: 300px;
+      height: 700px;
+      top: 0;
+      left: 520px;
+      left: 70%;
+    }
+
+    #page h1 {
+      font-size: 20px;
+      font-weight: bold;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      position: absolute;
+      top: 52%;
+      transform: translate(0, -40%);
+    }
+  </style>
+<!-- Cookies banner Reference: https://www.websitepolicies.com/create/cookie-consent-banner -->
+<link rel="stylesheet" type="text/css" href="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.css" />
+<script src="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.js" defer></script>
+<script>window.addEventListener("load", function () 
+{ window.wpcc.init({ "border": "thick", "corners": "large", "colors": { "popup": 
+{ "background": "#222222", "text": "#ffffff", "border": "#b3d0e4" }, "button": 
+{ "background": "#b3d0e4", "text": "#000000" } }, "position": "bottom", "padding": "none", "margin": "large", "fontsize": "large", "content": { "href": "stored_info.html", "message": "By continuing to use this website we assume you agree to our ", "link": "Privacy Policy" } }) });</script>
+<!-- End Cookies banner -->
+
+</head>
+
+<body class="pageText">
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <!-- Image Reference: https://depositphotos.com/vector-images/color-wheel.html-->
+      <a class="navbar-brand" href="home.html"><img src="images/wheel.png" width="30" height="30" id="logo"
+          class="d-inline-block align-top">Wheel of Boredom</a>
+
+      <!-- Adds dropdown button if window size decreased -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navigation Bar Buttons-->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <!-- Navigation link: Home -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+          </li>
+
+          <!-- Dropdown Navigation link: Information -->
+          <li class="nav-item dropdown">
+            <!-- Dropdown Menu -->
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Information
+            </a>
+            <!-- Menu Contents-->
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="aboutus.html">About Us</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="stored_info.html">Privacy Policy</a></li>
+            </ul>
+            <!-- Navigation link: Contact Us -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contactus.html">Contact Us</a>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- NAVIGATION BAR (END) -->
+
+  <h3 class="text-center" id="banner">Spin your way out of boredom!</h2>
+    <hr>
     <div id="chart"></div>
-    <div id="page"><h1></div>
-      <div id="wrapper"><a href="#" id="btn" hidden>Activity</a></div>
-  </body>
+    <div id="page">
+      <h1>
+    </div>
+    <div id="wrapper"><a href="#" id="btn" hidden>Activity</a></div>
+</body>
+
 </html>
 <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script type="text/javascript" charset="utf-8">
-        var padding = {top:20, right:40, bottom:0, left:0},
-            w = 500 - padding.left - padding.right,
-            h = 500 - padding.top  - padding.bottom,
-            r = Math.min(w, h)/2,
-            rotation = 0,
-            oldrotation = 0,
-            picked = 100000,
-            oldpick = [],
-            color = d3.scale.category20();
-			
-        //http://osric.com/bingo-card-generator/?title=HTML+and+CSS+BINGO!&words=padding%2Cfont-family%2Ccolor%2Cfont-weight%2Cfont-size%2Cbackground-color%2Cnesting%2Cbottom%2Csans-serif%2Cperiod%2Cpound+sign%2C%EF%B9%A4body%EF%B9%A5%2C%EF%B9%A4ul%EF%B9%A5%2C%EF%B9%A4h1%EF%B9%A5%2Cmargin%2C%3C++%3E%2C{+}%2C%EF%B9%A4p%EF%B9%A5%2C%EF%B9%A4!DOCTYPE+html%EF%B9%A5%2C%EF%B9%A4head%EF%B9%A5%2Ccolon%2C%EF%B9%A4style%EF%B9%A5%2C.html%2CHTML%2CCSS%2CJavaScript%2Cborder&freespace=true&freespaceValue=Web+Design+Master&freespaceRandom=false&width=5&height=5&number=35#results
-        var data = [
-                    {"label":"Activity 1","name":"Keepy Uppy's",page:"activities/ActivityOne.html",value: 1},
-                    {"label":"Activity 2","name":"Oragami Paper Crane",page:"activities/ActivityTwo.html",value: 2},
-                    {"label":"Activity 3","name":"Draw a Dog",page:"activities/ActivityThree.html",value: 3},
-                    {"label":"Activity 4","name":"Plank",page:"activities/ActivityFour.html",value: 4},
-                    {"label":"Activity 5","name":"Shuffle Cards",page:"activities/ActivityFive.html",value: 5},
-                    {"label":"Activity 6","name":"Finger Whistling",page:"activities/ActivitySix.html",value: 6},
-                    {"label":"Activity 7","name":"Cartwheel",page:"activities/ActivitySeven.html",value: 7},
-                    {"label":"Activity 8","name":"Hand Sewing",page:"activities/ActivityEight.html",value: 8},
-                    {"label":"Activity 9","name":"Juggling",page:"activities/ActivityNine.html",value: 9}, 
-			            ];
-        var svg = d3.select('#chart')
-            .append("svg")
-            .data([data])
-            .attr("width",  w + padding.left + padding.right)
-            .attr("height", h + padding.top + padding.bottom);
-			
-        var container = svg.append("g")
-            .attr("class", "chartholder")
-            .attr("transform", "translate(" + (w/2 + padding.left) + "," + (h/2 + padding.top) + ")");
-			
-        var vis = container
-            .append("g");
-            
-        var pie = d3.layout.pie().sort(null).value(function(d){return 1;});
-		
-        // declare an arc generator function
-        var arc = d3.svg.arc().outerRadius(r);
-		
-        // select paths, use arc generator to draw
-        var arcs = vis.selectAll("g.slice")
-            .data(pie)
-            .enter()
-            .append("g")
-            .attr("class", "slice");
-            
-        arcs.append("path")
-            .attr("fill", function(d, i){ return color(i); })
-            .attr("d", function (d) { return arc(d); });
-			
-        // add the text
-        arcs.append("text").attr("transform", function(d){
-                d.innerRadius = 0;
-                d.outerRadius = r;
-                d.angle = (d.startAngle + d.endAngle)/2;
-                return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")translate(" + (d.outerRadius -10) +")";
-            })
-            .attr("text-anchor", "end")
-            .text( function(d, i) {
-                return data[i].label;
-            });
+  var padding = { top: 20, right: 40, bottom: 0, left: 0 },
+    w = 500 - padding.left - padding.right,
+    h = 500 - padding.top - padding.bottom,
+    r = Math.min(w, h) / 2,
+    rotation = 0,
+    oldrotation = 0,
+    picked = 100000,
+    oldpick = [],
+    color = d3.scale.category20();
+
+  //http://osric.com/bingo-card-generator/?title=HTML+and+CSS+BINGO!&words=padding%2Cfont-family%2Ccolor%2Cfont-weight%2Cfont-size%2Cbackground-color%2Cnesting%2Cbottom%2Csans-serif%2Cperiod%2Cpound+sign%2C%EF%B9%A4body%EF%B9%A5%2C%EF%B9%A4ul%EF%B9%A5%2C%EF%B9%A4h1%EF%B9%A5%2Cmargin%2C%3C++%3E%2C{+}%2C%EF%B9%A4p%EF%B9%A5%2C%EF%B9%A4!DOCTYPE+html%EF%B9%A5%2C%EF%B9%A4head%EF%B9%A5%2Ccolon%2C%EF%B9%A4style%EF%B9%A5%2C.html%2CHTML%2CCSS%2CJavaScript%2Cborder&freespace=true&freespaceValue=Web+Design+Master&freespaceRandom=false&width=5&height=5&number=35#results
+  var data = [
+    { "label": "Activity 1", "name": "Keepy Uppy's", page: "activities/ActivityOne.html", value: 1 },
+    { "label": "Activity 2", "name": "Oragami Paper Crane", page: "activities/ActivityTwo.html", value: 2 },
+    { "label": "Activity 3", "name": "Draw a Dog", page: "activities/ActivityThree.html", value: 3 },
+    { "label": "Activity 4", "name": "Plank", page: "activities/ActivityFour.html", value: 4 },
+    { "label": "Activity 5", "name": "Shuffle Cards", page: "activities/ActivityFive.html", value: 5 },
+    { "label": "Activity 6", "name": "Finger Whistling", page: "activities/ActivitySix.html", value: 6 },
+    { "label": "Activity 7", "name": "Cartwheel", page: "activities/ActivitySeven.html", value: 7 },
+    { "label": "Activity 8", "name": "Hand Sewing", page: "activities/ActivityEight.html", value: 8 },
+    { "label": "Activity 9", "name": "Juggling", page: "activities/ActivityNine.html", value: 9 },
+  ];
+  var svg = d3.select('#chart')
+    .append("svg")
+    .data([data])
+    .attr("width", w + padding.left + padding.right)
+    .attr("height", h + padding.top + padding.bottom);
+
+  var container = svg.append("g")
+    .attr("class", "chartholder")
+    .attr("transform", "translate(" + (w / 2 + padding.left) + "," + (h / 2 + padding.top) + ")");
+
+  var vis = container
+    .append("g");
+
+  var pie = d3.layout.pie().sort(null).value(function (d) { return 1; });
+
+  // declare an arc generator function
+  var arc = d3.svg.arc().outerRadius(r);
+
+  // select paths, use arc generator to draw
+  var arcs = vis.selectAll("g.slice")
+    .data(pie)
+    .enter()
+    .append("g")
+    .attr("class", "slice");
+
+  arcs.append("path")
+    .attr("fill", function (d, i) { return color(i); })
+    .attr("d", function (d) { return arc(d); });
+
+  // add the text
+  arcs.append("text").attr("transform", function (d) {
+    d.innerRadius = 0;
+    d.outerRadius = r;
+    d.angle = (d.startAngle + d.endAngle) / 2;
+    return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")translate(" + (d.outerRadius - 10) + ")";
+  })
+    .attr("text-anchor", "end")
+    .text(function (d, i) {
+      return data[i].label;
+    });
+
+  container.on("click", spin);
+
+  // Function: Spin the Wheel
+  function spin(d) {
+    container.on("click", null);
+    //all slices have been seen, all done
+    console.log("OldPick: " + oldpick.length, "Data length: " + data.length);
+
+    if (oldpick.length == data.length) {
+      console.log("done");
+      container.on("click", null);
+      return;
+    }
+
+    var ps = 360 / data.length,
+      pieslice = Math.round(1440 / data.length),
+      rng = Math.floor((Math.random() * 1440) + 360);
+
+    rotation = (Math.round(rng / ps) * ps);
+
+    picked = Math.round(data.length - (rotation % 360) / ps);
+    picked = picked >= data.length ? (picked % data.length) : picked;
+    if (oldpick.indexOf(picked) !== -1) {
+      d3.select(this).call(spin);
+      return;
+    } else {
+      oldpick.push(picked);
+    }
+
+    rotation += 90 - Math.round(ps / 2);
+
+    vis.transition()
+      .duration(3000)
+      .attrTween("transform", rotTween)
+      .each("end", function () {
+
+        //mark activity as seen
+        d3.select(".slice:nth-child(" + (picked + 1) + ") path")
+          .attr("fill", "#111");
+
+
+
+        // Determines what activity was chosen
+        for (var i = 1; i <= 10; i++) {
+          // If: the "value" variable at position "picked" in the array is equal to i
+          if (data[picked].value == i) {
+
+            let activityHtml = data[i].page;
+            let currActivity = data[i].name;
+            document.getElementById("btn").innerHTML = currActivity;
+            document.getElementById("btn").href = activityHtml;
+            document.getElementById("btn").hidden = false;
+          }
+        }
+
+        oldrotation = rotation;
 
         container.on("click", spin);
+      });
+  }
+  //make arrow
+  svg.append("g")
+    .attr("transform", "translate(" + (w + padding.left + padding.right) + "," + ((h / 2) + padding.top) + ")")
+    .append("path")
+    .attr("d", "M-" + (r * .15) + ",0L0," + (r * .05) + "L0,-" + (r * .05) + "Z")
+    .style({ "fill": "black" });
+  //draw spin circle
+  container.append("circle")
+    .attr("cx", 0)
+    .attr("cy", 0)
+    .attr("r", 60)
+    .style({ "fill": "white", "cursor": "pointer" });
+  //spin text
+  container.append("text")
+    .attr("x", 0)
+    .attr("y", 15)
+    .attr("text-anchor", "middle")
+    .text("SPIN")
+    .style({ "font-weight": "bold", "font-size": "30px" });
 
-        // Function: Spin the Wheel
-        function spin(d){
-            container.on("click", null);
-            //all slices have been seen, all done
-            console.log("OldPick: " + oldpick.length, "Data length: " + data.length);
-			
-            if(oldpick.length == data.length){
-                console.log("done");
-                container.on("click", null);
-                return;
-            }
-			
-            var  ps       = 360/data.length,
-                 pieslice = Math.round(1440/data.length),
-                 rng      = Math.floor((Math.random() * 1440) + 360);
-                
-            rotation = (Math.round(rng / ps) * ps);
-            
-            picked = Math.round(data.length - (rotation % 360)/ps);
-            picked = picked >= data.length ? (picked % data.length) : picked;
-            if(oldpick.indexOf(picked) !== -1){
-                d3.select(this).call(spin);
-                return;
-            } else {
-                oldpick.push(picked);
-            }
 
-            rotation += 90 - Math.round(ps/2);
+  function rotTween(to) {
+    var i = d3.interpolate(oldrotation % 360, rotation);
+    return function (t) {
+      return "rotate(" + i(t) + ")";
+    };
+  }
 
-            vis.transition()
-                .duration(3000)
-                .attrTween("transform", rotTween)
-                .each("end", function(){
+  function getRandomNumbers() {
+    var array = new Uint16Array(1000);
+    var scale = d3.scale.linear().range([360, 1440]).domain([0, 100000]);
 
-                    //mark activity as seen
-                    d3.select(".slice:nth-child(" + (picked + 1) + ") path")
-                        .attr("fill", "#111");
-
-                        
-                        
-                        // Determines what activity was chosen
-                        for(var i =1; i <= 10; i++)
-                        {
-                          // If: the "value" variable at position "picked" in the array is equal to i
-                          if(data[picked].value == i)
-                          {
-                              
-                              let activityHtml = data[i].page;
-                              let currActivity = data[i].name;
-                              document.getElementById("btn").innerHTML = currActivity;
-                              document.getElementById("btn").href = activityHtml;
-                              document.getElementById("btn").hidden = false;
-                          }
-                        }
-
-                    oldrotation = rotation;
-                
-                    container.on("click", spin);
-                });
-        }
-        //make arrow
-        svg.append("g")
-            .attr("transform", "translate(" + (w + padding.left + padding.right) + "," + ((h/2)+padding.top) + ")")
-            .append("path")
-            .attr("d", "M-" + (r*.15) + ",0L0," + (r*.05) + "L0,-" + (r*.05) + "Z")
-            .style({"fill":"black"});
-        //draw spin circle
-        container.append("circle")
-            .attr("cx", 0)
-            .attr("cy", 0)
-            .attr("r", 60)
-            .style({"fill":"white","cursor":"pointer"});
-        //spin text
-        container.append("text")
-            .attr("x", 0)
-            .attr("y", 15)
-            .attr("text-anchor", "middle")
-            .text("SPIN")
-            .style({"font-weight":"bold", "font-size":"30px"});
-        
-        
-        function rotTween(to) {
-          var i = d3.interpolate(oldrotation % 360, rotation);
-          return function(t) {
-            return "rotate(" + i(t) + ")";
-          };
-        }
-        
-        function getRandomNumbers(){
-            var array = new Uint16Array(1000);
-            var scale = d3.scale.linear().range([360, 1440]).domain([0, 100000]);
-			
-			for(var i=0; i < 1000; i++){
-				array[i] = Math.floor(Math.random() * 100000) + 1;
-			}
-            return array;
-        }
-    </script>
+    for (var i = 0; i < 1000; i++) {
+      array[i] = Math.floor(Math.random() * 100000) + 1;
+    }
+    return array;
+  }
+</script>
