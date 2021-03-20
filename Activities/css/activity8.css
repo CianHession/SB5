@@ -1,0 +1,77 @@
+ .pageText{font-family: 'Arvo', serif;
+      background-color: rgb(255, 255, 255);
+      color: black;}
+
+       /* CSS: Logo & Banner*/
+      #logo{margin-right: 8px;}
+      #banner{margin-top: 10px;}
+
+      /* CSS: Heading 2*/
+      h2{
+        margin-top: 10px;
+        margin-left: 46%;
+      }
+
+      /* CSS: Heading 5*/
+      h5{
+        margin-left: 40px;
+      }
+		
+      /* CSS: Paragraph*/
+      p {
+        margin-right: 15px;
+        margin-left: 40px;
+      }
+
+      /* CSS: Thematic Break */
+      .break{
+        color: grey;
+        border-top: dotted;
+      }
+
+      /* CSS: Grid */
+      .container {
+      display:grid;
+      grid-column-gap: 50px;
+      margin-right: 20%;
+      }
+
+    /* CSS: Grid Items*/
+      .item1{
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 1;
+        grid-column-end:  2;
+      }
+
+      .item2{
+        border-left: thin solid black;
+        margin-top: 3%;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 3;
+        grid-column-end:  4;
+      }
+
+       /* CSS: Videos*/
+      #video{
+        margin-left: 35%;
+        margin-top: 10%;
+        border: 5px solid black;
+      }
+      .center
+      {
+        margin-top: auto;
+        margin-left: 77%;
+      }
+
+      .border{
+        border-left: thin solid black;
+      }
+
+      .inline
+      {
+        display: flex;
+        margin-top: 30px;
+        margin-left: 66%;
+      }
