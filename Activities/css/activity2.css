@@ -1,4 +1,4 @@
-      /*CSS: Page Text*/`
+      /*CSS: Page Text*/
       .pageText{font-family: 'Arvo', serif;
 	background-color: rgb(255, 255, 255);
 	color: black;}
@@ -54,11 +54,11 @@
         grid-column-end:  4;
       }
 
-      /* CSS: Videos*/
-       #video{
+/* CSS: Video*/
+       .video{
         margin-left: 35%;
-        margin-top: 12%;
-        border: 5px solid black;
+        margin-top: 8%;
+        border: 2px solid black;
       }
 	
       /* CSS: Center Video header*/

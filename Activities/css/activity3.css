@@ -1,6 +1,7 @@
-.pageText{font-family: 'Arvo', serif;
-      background-color: rgb(255, 255, 255);
-      color: black;}
+  	/*CSS: Page Text*/`
+       .pageText{font-family: 'Arvo', serif;
+	background-color: rgb(255, 255, 255);
+	color: black;}
 
        /* CSS: Logo & Banner*/
       #logo{margin-right: 8px;}
@@ -38,6 +39,7 @@
 
     /* CSS: Grid Items*/
       .item1{
+	margin-top:20px;
         grid-row-start: 1;
         grid-row-end: 3;
         grid-column-start: 1;
@@ -53,11 +55,11 @@
         grid-column-end:  4;
       }
 
-       /* CSS: Videos*/
-       #video{
+       /* CSS: Video*/
+       .video{
         margin-left: 35%;
-        margin-top: 5%;
-        border: 5px solid black;
+        margin-top: 8%;
+        border: 2px solid black;
       }
 
       /* CSS: Center Video header*/

@@ -1,6 +1,7 @@
-.pageText{font-family: 'Arvo', serif;
-      background-color: rgb(255, 255, 255);
-      color: black;}
+  	/*CSS: Page Text*/
+        .pageText{font-family: 'Arvo', serif;
+	background-color: rgb(255, 255, 255);
+	color: black;}
 
        /* CSS: Logo & Banner*/
       #logo{margin-right: 8px;}
@@ -9,7 +10,7 @@
       /* CSS: Heading 2*/
       h2{
         margin-top: 10px;
-        margin-left: 46%;
+        margin-left: 43%;
       }
 
       /* CSS: Heading 5*/

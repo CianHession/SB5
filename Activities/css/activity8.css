@@ -1,6 +1,7 @@
- .pageText{font-family: 'Arvo', serif;
-      background-color: rgb(255, 255, 255);
-      color: black;}
+  	/*CSS: Page Text*/
+       .pageText{font-family: 'Arvo', serif;
+	background-color: rgb(255, 255, 255);
+	color: black;}
 
        /* CSS: Logo & Banner*/
       #logo{margin-right: 8px;}
@@ -77,5 +78,5 @@
       {
         display: flex;
         margin-top: 30px;
-        margin-left: 66%;
+        margin-left: 70%;
       }
