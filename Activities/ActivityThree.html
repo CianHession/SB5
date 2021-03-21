@@ -12,25 +12,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet"> 
 
     <title>Wheel of Boredom</title>
-    <!-- CSS -->
-    <style>
-        .pageText{font-family: 'Arvo', serif;
-        background-color: rgb(255, 255, 255);
-        color: black;}
-
-        #logo{margin-right: 8px;}
-        #banner{margin-top: 10px;}
-		
-		p {
-		  margin-right: 15px;
-		  margin-left: 15px;
-		}
-
-    </style>
+    <!--External CSS-->
+    <link rel="stylesheet" type="text/css" href="css/activity3.css">
   </head>
+  <!--HTML -->
   <body class="pageText">
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Facebook SDK-->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="01GEI4Ra"></script>
 
     <!-- NAVIGATION BAR -->
    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -76,30 +68,41 @@
       </nav>
       <!-- NAVIGATION BAR (END) -->
 	 
-	  <!-- Activity 3 (START)-->
-	  <h1><center>Learn how to Draw a Dog</center></h1>
+	  <!-- Activity 1 (START)-->
+	  <h2>Draw a Dog</h2>
+    <hr class="break">
 	  
-	  <p>Drawing might seem hard but is very easy to learn if you follow the right guide.<br>You will a page to draw on and a pencil.</p>
-	  	  
-	  <h5><b><u>Steps:</u></b></h5>
+	  <p><center>Drawing might seem hard but is very easy to learn if you follow the right guide.<br>You will need a page to draw on and a pencil.</center></p>
+	  <hr>
+    <br>
+    
+    <div class="container">
+      <div class="item1">
+	  <h5><b><u>Steps</u></b></h5>
 	  <p>1. Draw the dog's eye with a dot on the page. <br>
-	  2. Draw a semi-circle line above the dog's eye. <br>
-	  3. Extend the front of the line to draw the dog's nose, draw a dot at the end of the line for his nose. <br>
-	  4. Under the nose draw a L shape inwards to complete the dog's mouth. <br>
-	  5. Under the inwards line continue down to draw the dog's neck. <br>
-	  6. At the other side of the top line, continue down and turn inwards to draw the dog's ear. <br>
-	  7. From the bottom of the ear draw down to complete the dog's back. <br>
-	  8. On the other side draw down to make the dog's chest and add two front legs at the bottom of the line. <br>
-	  9. Continue down the line and add the back legs and a tail. <br>
-	  10. You can finish by adding lines on the dog's paws and an ear behind the dog's head with dots on the mouth. </p>
+      2. Draw a semi-circle line above the dog's eye. <br>
+      3. Extend the front of the line to draw the dog's nose, draw a dot at the end of the line for his nose. <br>
+      4. Under the nose draw a L shape inwards to complete the dog's mouth. <br>
+      5. Under the inwards line continue down to draw the dog's neck. <br>
+      6. At the other side of the top line, continue down and turn inwards to draw the dog's ear. <br>
+      7. From the bottom of the ear draw down to complete the dog's back. <br>
+      8. On the other side draw down to make the dog's chest and add two front legs at the bottom of the line. <br>
+      9. Continue down the line and add the back legs and a tail. <br>
+      10. You can finish by adding lines on the dog's paws and an ear behind the dog's head with dots on the mouth. </p>
 	
 	<p><b>Difficulty: </b>Easy</p>
-	<p><b>Duration: </b>3 Minutes</p>
-	
-	
-	<h5><b><u>Video:</u></b></h5>	
-	<center><iframe width="560" height="315" src="https://www.youtube.com/embed/pQKwHWaa3XA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
-	
-	<!-- Activity 3 (END)-->
-	
+	<p><b>Duration: </b>3 minutes</p>
+</div>
+<div class="item2">
+  <h5 class="center"><b><u>Video</u></b></h5>
+  <center><iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/pQKwHWaa3XA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+
+    <!-- Twitter & Facebook Share Button (HTML and JavaScript)-->
+    <div class="inline">
+      <center><a href="https://twitter.com/intent/tweet?" class="twitter-mention-button" data-size="large" data-text="Currently learning how to draw a dog! #WheelofBoredom" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></center>
+      <div class="fb-share-button" data-href="https://wheelofboredom.ie" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+    </div>
+</div>
+</div>
+	<!-- Activity 1 (END)-->
 </html>
