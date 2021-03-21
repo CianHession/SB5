@@ -59,16 +59,20 @@
         margin-top: 10%;
         border: 5px solid black;
       }
+
+      /* CSS: Center Video header*/
       .center
       {
         margin-top: auto;
         margin-left: 77%;
       }
 
+      /* CSS: Dividing line between text and visual guide */
       .border{
         border-left: thin solid black;
       }
 
+      /* CSS: Displays share buttons inline */
       .inline
       {
         display: flex;

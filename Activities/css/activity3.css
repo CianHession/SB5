@@ -53,21 +53,26 @@
         grid-column-end:  4;
       }
 
-       /* CSS: iFrame (Video)*/
-      iframe{
+       /* CSS: Videos*/
+       #video{
         margin-left: 35%;
-        margin-top: 15%;
+        margin-top: 5%;
+        border: 5px solid black;
       }
+
+      /* CSS: Center Video header*/
       .center
       {
         margin-top: auto;
         margin-left: 77%;
       }
 
+      /* CSS: Center Video header*/
       .border{
         border-left: thin solid black;
       }
 
+      /* CSS: Displays share buttons inline */
       .inline
       {
         display: flex;

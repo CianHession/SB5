@@ -1,4 +1,5 @@
-.pageText{font-family: 'Arvo', serif;
+      /* CSS: Page Text*/
+      .pageText{font-family: 'Arvo', serif;
       background-color: rgb(255, 255, 255);
       color: black;}
 
@@ -38,6 +39,7 @@
 
     /* CSS: Grid Items*/
       .item1{
+	margin-top:15%;
         grid-row-start: 1;
         grid-row-end: 3;
         grid-column-start: 1;
@@ -53,21 +55,26 @@
         grid-column-end:  4;
       }
 
-       /* CSS: iFrame (Video)*/
-      iframe{
+      /* CSS: Video*/
+       .video{
         margin-left: 35%;
-        margin-top: 15%;
+        margin-top: 5%;
+        border: 2px solid black;
       }
+
+      /* CSS: Center Video header*/
       .center
       {
         margin-top: auto;
         margin-left: 77%;
       }
 
+      /* CSS: Dividing line between text and visual guide */
       .border{
         border-left: thin solid black;
       }
 
+      /* CSS: Displays share buttons inline */
       .inline
       {
         display: flex;
