@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS - Implementing Bootstrap Framework (SMD)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- Google Fonts: Arvo-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet"> 
+
+    <title>Wheel of Boredom</title>
+    <!--External CSS-->
+    <link rel="stylesheet" type="text/css" href="css/activity2.css">
+  </head>
+  <!--HTML -->
+  <body class="pageText">
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Facebook SDK-->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="01GEI4Ra"></script>
+
+    <!-- NAVIGATION BAR -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <!-- Image Reference: https://depositphotos.com/vector-images/color-wheel.html-->
+          <a class="navbar-brand" href="../home.html"><img src="../images/wheel.png" width="30" height="30" id="logo" class="d-inline-block align-top">Wheel of Boredom</a>
+
+          <!-- Adds dropdown button if window size decreased -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navigation Bar Buttons-->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <!-- Navigation link: Home -->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../home.html">Home</a>
+              </li>
+
+              <!-- Dropdown Navigation link: Information -->
+              <li class="nav-item dropdown">
+                  <!-- Dropdown Menu -->
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Information
+                </a>
+                <!-- Menu Contents-->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="../aboutus.html">About Us</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="../stored_info.html">Privacy Policy</a></li>
+                </ul>
+
+                <!-- Navigation link: Contact Us -->
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../contactus.html">Contact Us</a>
+                </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- NAVIGATION BAR (END) -->
+	 
+	  <!-- Activity 2 (START)-->
+	  <h2>Debug Page</h2>
+    <hr class="break">
+	  
+	  <p><center>Title Here</center></p><hr>
+    <br>
+    
+    <div class="container">
+      <div class="item1">
+	  <h5><b><u>Test</u></b></h5>
+	  <p>"Hello World!"<br>
+	  chances are if you are here, this is a test page.</p>
+	
+	<p><b>Difficulty: </b>N/A</p>
+	<p><b>Duration: </b>NaN</p>
+</div>
+<div class="item2">
+  <h5 class="center"><b><u>Video</u></b></h5>
+
+  <center><iframe class="video" width="560" height="315"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+
+    <!-- Twitter & Facebook Share Button (HTML and JavaScript)-->
+    <div class="inline">
+      <center><a href="https://twitter.com/intent/tweet?" class="twitter-mention-button" data-size="large" data-text="Currently learning how to make a paper origami plane! #WheelofBoredom" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></center>
+      <div class="fb-share-button" data-href="https://wheelofboredom.ie" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+    </div>
+</div>
+</div>
+	<!-- Activity 2 (END)-->
+</html>
