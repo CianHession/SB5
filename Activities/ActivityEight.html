@@ -12,25 +12,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet"> 
 
     <title>Wheel of Boredom</title>
-    <!-- CSS -->
-    <style>
-        .pageText{font-family: 'Arvo', serif;
-        background-color: rgb(255, 255, 255);
-        color: black;}
-
-        #logo{margin-right: 8px;}
-        #banner{margin-top: 10px;}
-		
-		p {
-		  margin-right: 15px;
-		  margin-left: 15px;
-		}
-
-    </style>
+    <!--External CSS-->
+    <link rel="stylesheet" type="text/css" href="css/activity8.css">
   </head>
+  <!--HTML -->
   <body class="pageText">
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Facebook SDK-->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="01GEI4Ra"></script>
 
     <!-- NAVIGATION BAR -->
    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -76,70 +68,68 @@
       </nav>
       <!-- NAVIGATION BAR (END) -->
 	 
-	  <!-- Activity 8(START)-->
-	  <h1><center>Learn how to Sew by hand</center></h1>
+	  <!-- Activity 8 (START)-->
+	  <h2>Hand Sewing</h2>
+    <hr class="break">
 	  
-	  <p>Sewing is an easy and fantastic thing to know and learn, you never know when it might come in handy!</p>
-	  <p><b>Tips: </b>This is a basic life skill that not many people know how to do. It takes a lot of practice to master but is a really useful skill to have. Learning this skill will allow you to repair tears in clothes so they can be used again. I think this is a good skill to learn as all you need is:
-        <ul>
-            <li>Needle</li>
-            <li>Thread</li>
-            <li>Material to work on</li>
-            <li>Scissors</li>
-            <li>Patience</li>
-            <li>Patience</li>
-            <li>Hand-eye coordination</li>
-        </ul>
-    </p>
-	  
-	  <h5><b><u>Steps:</u></b></h5>
-	    <p>
-            <li><b>1. Thread your needle and secure a knot:</b></li>
-            <ol type="i">
-                <li>Start by cutting a length of thread</li>
-                <li>Insert the thread in the loop on the needle and pull until the thread is doubled over</li>
-                <li>Secure a knot at the ends of the thread by wrapping the thread around your index finger putting the thread ends inside the loop, then pull to make a knot</li>
-                <li>Cut the end of the thread off with scissors just shy of the knot to tidy it up</li>
-            </ol>
-        </p>
-        <p>
-            <li><b>2. Start Stitching</b></li>
-            <li>	<i><u>Running Stitch - Use when stitching something quickly or to obtain a gathered appearance</u></i></li>
-            <ol type="i">
-            <li>Insert the needle in the fabric in the direction you want to go and pull until tight. There is now 1 stitch in your fabric</li>
-            <li>Insert the thread in the loop on the needle and pull until the thread is doubled over</li>
-            <li>Repeat step 2 until you have reached your destination and pull until the fabric gets bunched up and tie off</li>
-            </ol>
-            <li>	<i><u>Back Stitch - Use when you require a stronger stitch</u></i></li>
-            <ol type="i">
-                <li>First do a normal stitch, then start your second stitch from where the first one ended. This stitch is stronger version of the running stitch</li>
-                <li>Repeat and tie off</li>
-            </ol>
-            <li><i><u>Blanket Stitch - Use when stitching two edges together</u></i></li>
-            <ol type="i">
-                <li>For the first stitch - insert the needle in the same place, pass the needle through the loop and pull</li>
-                <li>Insert the needle a small distance away from the first stitch. Pass the needle through the loop and pull</li>
-                <li>Tie off when you are finished</li>
-            </ol>
-        </p>
-        <p>
-            <b><li>3. Tying Off:</b></li>  
-            On the side your free thread is exposed insert the needle into the previous stitch and pull until there is a small loop of thread, then put the needle through the loop and pull until tight. Repeat this step until secure
-        </p>
-        
-       
+	  <p><center>Sewing is an easy and fantastic thing to know and learn, you never know when it might come in handy!</center></p>
+	  <p><center><b>Tips:</b> This is a basic life skill that not many people know how to do. It takes a lot of practice to master but is a really useful skill to have. Learning this skill will allow you to repair tears in clothes so they can be used again.</center></p>
+     <p><center><b>Requirements:</b> <u>Needle, Thread, Material, Scissors, Patience, Hand-eye coordination</u></b></center></p>
+     <hr>
+    <br>
+    
+    <div class="container">
+      <div class="item1">
+	  <h5><b><u>Steps</u></b></h5>
+	  <p><li><b>1. Thread your needle and secure a knot:</b></li>
+      <ol type="i">
+          <li>Start by cutting a length of thread</li>
+          <li>Insert the thread in the loop on the needle and pull until the thread is doubled over</li>
+          <li>Secure a knot at the ends of the thread by wrapping the thread around your index finger putting the thread ends inside the loop, then pull to make a knot</li>
+          <li>Cut the end of the thread off with scissors just shy of the knot to tidy it up</li>
+      </ol>
+  </p>
+  <p>
+      <li><b>2. Start Stitching</b></li>
+      <li>	<i><u>Running Stitch - Use when stitching something quickly or to obtain a gathered appearance</u></i></li>
+      <ol type="i">
+      <li>Insert the needle in the fabric in the direction you want to go and pull until tight. There is now 1 stitch in your fabric</li>
+      <li>Insert the thread in the loop on the needle and pull until the thread is doubled over</li>
+      <li>Repeat step 2 until you have reached your destination and pull until the fabric gets bunched up and tie off</li>
+      </ol>
+      <li>	<i><u>Back Stitch - Use when you require a stronger stitch</u></i></li>
+      <ol type="i">
+          <li>First do a normal stitch, then start your second stitch from where the first one ended. This stitch is stronger version of the running stitch</li>
+          <li>Repeat and tie off</li>
+      </ol>
+      <li><i><u>Blanket Stitch - Use when stitching two edges together</u></i></li>
+      <ol type="i">
+          <li>For the first stitch - insert the needle in the same place, pass the needle through the loop and pull</li>
+          <li>Insert the needle a small distance away from the first stitch. Pass the needle through the loop and pull</li>
+          <li>Tie off when you are finished</li>
+      </ol>
+  </p>
+  <p>
+      <b><li>3. Tying Off:</b></li>  
+      On the side your free thread is exposed insert the needle into the previous stitch and pull until there is a small loop of thread, then put the needle through the loop and pull until tight. Repeat this step until secure
+  </p>
 	
-	<p><b>Difficulty: </b>Medium</p>
-	<p><b>Duration:</b> Don't be disheartened if your stitching looks messy, it takes time to develop this skill. KEEP PRACTICING!!
-    </p>
-	
-	
-	<h5><b><u>Video:</u></b></h5>	
-	<center><iframe width="560" height="315" src="https://www.youtube.com/embed/1FknfumFPX8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe></center>
+	<p><b>Difficulty: </b>Hard</p>
+	<p><b>Duration: </b>All depending on the individual, however with enough practise and determination one can do this within the same day.</p>
+</div>
+<div class="item2">
+  <h5 class="center"><b><u>Videos</u></b></h5>
+  <center><iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/1FknfumFPX8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+  <center><iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/-ynBWa5ej1Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
 
-    <center><p>When you feel comfortable with basic sewing skills, why not try fixing a tear?</p></center>
-    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/-ynBWa5ej1Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
-
+    <!-- Twitter & Facebook Share Button (HTML and JavaScript)-->
+    <div class="inline">
+      <center><a href="https://twitter.com/intent/tweet?" class="twitter-mention-button" data-size="large" data-text="Currently learning how to sew! #WheelofBoredom" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></center>
+      <div class="fb-share-button" data-href="https://wheelofboredom.ie" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+    </div>
+</div>
+</div>
 	<!-- Activity 8 (END)-->
-	
+</html>
+
 </html>
